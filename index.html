@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ariela Vargas — Asesora Financiera</title>
+  <meta name="description" content="Ariela Vargas — Asesora financiera: planificación, ahorro, inversión y asesoría personalizada." />
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos locales -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo-circle" aria-hidden>AV</div>
+        <div>
+          <h1>Ariela Vargas</h1>
+          <p>Asesora financiera</p>
+        </div>
+      </div>
+
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div>
+          <h2>Te ayudo a alcanzar tus objetivos financieros</h2>
+          <p class="lead">Soy Ariela Vargas, asesora financiera. 
+            Diseño estrategias personalizadas de ahorro e inversión.
+             Trabajo mano a mano 
+             contigo para convertir metas en planes claros y alcanzables.</p>
+          <div class="cta-row">
+            <button class="btn-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Agendar consulta</button>
+            <button class="btn-ghost" onclick="document.getElementById('sobre-mi').scrollIntoView({behavior:'smooth'})">Saber más</button>
+          </div>
+
+          <div style="margin-top:34px;">
+            <strong>Especialidades:</strong>
+            <ul style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Planeación financiera personal</li>
+              <li>Recuperación de saldos en AFORE</li>
+              <li>Estrategias de inversión para principiantes</li>
+              <li>Estrategias de inversión para pensionados y jubilados.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="portrait" aria-hidden>
+          <!-- Reemplaza src por la foto profesional de Ariela -->
+          <img src="ariela 1.jpeg"Portrait profesional de Ariela Vargas"/>
+        </aside>
+      </section>
+
+      <section id="sobre-mi">
+        <div style="display:grid;grid-template-columns:1fr 380px;gap:36px;align-items:start">
+          <div>
+            <h3>Sobre mí</h3>
+            <p style="margin-top:12px;">Cuento con experiencia en
+              asesoría financiera y certificación en AFORE por parte de la CONSAR.
+               Mi enfoque combina análisis financiero
+               con soluciones prácticas y 
+              fáciles de implementar. Trabajo con metodologías
+              probadas para que desarrolles hábitos financieros
+              sostenibles.</p>
+          </div>
+
+          <div class="card">
+            <h4 style="margin:0 0 8px 0;font-family:Inter;font-weight:600;color:var(--accent-2)">Datos rápidos</h4>
+            <p style="margin:0;font-size:14px;color:var(--muted)">Consultas en línea · Planes personalizados · Rescate de fondos de AFORE · Pensiones</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios">
+        <h3 style="margin-bottom:18px">Servicios</h3>
+        <div class="grid-3">
+          <div class="card">
+            <h4>Planeación personal</h4>
+            <p style="margin-top:10px;color:var(--muted)">Análisis de ingresos y gastos, establecimiento de metas y ruta de ahorro.</p>
+          </div>
+          <div class="card">
+            <h4>Gestión de deuda</h4>
+            <p style="margin-top:10px;color:var(--muted)">Estrategias para reducir pasivos y mejorar la salud crediticia.</p>
+          </div>
+          <div class="card">
+            <h4>Inversión inicial</h4>
+            <p style="margin-top:10px;color:var(--muted)">Opciones básicas y diversificadas para comenzar a invertir con bajo riesgo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios">
+        <h3>Testimonios</h3>
+        <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+          <blockquote class="card" style="min-width:220px;max-width:420px">"Gracias a Ariela pude ahorrar para el enganche de mi departamento en 18 meses" — M. López</blockquote>
+          <blockquote class="card" style="min-width:220px;max-width:420px">"Plan simple, resultados reales. Recomendable 100%" — P. Rodríguez</blockquote>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h3>Contacto</h3>
+        <p style="margin-top:10px;color:var(--muted)">Agenda una primera consulta gratuita de 20 minutos.</p>
+
+        <form style="margin-top:18px" onsubmit="event.preventDefault();alert('Formulario simulado: en producción reemplaza la acción por tu backend o servicio de correo.')">
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Correo electrónico" required />
+          <input type="text" name="asunto" placeholder="Asunto" />
+          <textarea name="mensaje" placeholder="Cuéntame brevemente tu objetivo financiero"></textarea>
+          <button class="btn-primary" type="submit">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Ariela Vargas</strong> · Asesora financiera
+        </div>
+        <div style="color:var(--muted)">© <span id="year"></span> · Todos los derechos reservados</div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Script local -->
+  <script src="./script.js"></script>
+</body>
+</html>

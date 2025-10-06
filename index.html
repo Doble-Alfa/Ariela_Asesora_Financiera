@@ -58,9 +58,9 @@
           </div>
         </div>
 
-        <aside class="portrait" aria-hidden>
+        <aside class="portrait">
           <!-- Reemplaza src por la foto profesional de Ariela -->
-          <img src="ariela 1.jpeg"Portrait profesional de Ariela Vargas"/>
+          <img src="ariela 1.jpeg" alt="Portrait profesional de Ariela Vargas" />
         </aside>
       </section>
 
@@ -113,14 +113,8 @@
       <section id="contacto">
         <h3>Contacto</h3>
         <p style="margin-top:10px;color:var(--muted)">Agenda una primera consulta gratuita de 20 minutos.</p>
+        <!-- Botón movido a widget fijo en el pie -->
 
-        <form style="margin-top:18px" onsubmit="event.preventDefault();alert('Formulario simulado: en producción reemplaza la acción por tu backend o servicio de correo.')">
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-          <input type="email" name="email" placeholder="Correo electrónico" required />
-          <input type="text" name="asunto" placeholder="Asunto" />
-          <textarea name="mensaje" placeholder="Cuéntame brevemente tu objetivo financiero"></textarea>
-          <button class="btn-primary" type="submit">Enviar</button>
-        </form>
       </section>
 
     </main>
@@ -138,5 +132,16 @@
 
   <!-- Script local -->
   <script src="./script.js"></script>
+  <!-- Widget fijo de WhatsApp -->
+  <div class="wh-widget">
+    <div class="wh-widget__text">¿Prefieres chatear ahora?</div>
+    <a class="wh-widget__btn" href="https://wa.me/1527771320779?text=Hola%20Ariela,%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+      <!-- Icono WhatsApp (inline SVG) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden focusable="false">
+        <path d="M20.52 3.48A11.88 11.88 0 0 0 12 .03 11.96 11.96 0 0 0 .03 12c0 2.11.55 4.09 1.6 5.86L0 24l6.42-1.66A11.96 11.96 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.18-3.48-8.52z" fill="#25D366"/>
+        <path d="M17.53 14.7c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.28.3-.46.1-.17.05-.33-.02-.48-.07-.15-.68-1.64-.93-2.25-.25-.6-.5-.52-.68-.53-.17-.01-.36-.01-.55-.01-.2 0-.52.07-.79.33-.27.27-1.05 1.03-1.05 2.5 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.42 5.14 4.79 3.02 1.37 3.02 0.91 3.56 0.86.54-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35z" fill="#fff"/>
+      </svg>
+    </a>
+  </div>
 </body>
 </html>

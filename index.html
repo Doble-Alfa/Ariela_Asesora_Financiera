@@ -153,6 +153,31 @@
         </div>
       </section>
 
+<section id="simulador">
+  <h3 style="margin-bottom:18px">Simulador de inversión</h3>
+
+  <div class="card">
+    <div class="sim-grid">
+      <input type="number" id="monto" placeholder="Monto inicial ($)">
+      <input type="number" id="aporte" placeholder="Aporte mensual ($)">
+      <input type="number" id="tasa" placeholder="Tasa anual (%)">
+      <input type="number" id="plazo" placeholder="Plazo (años)">
+    </div>
+
+    <div class="cta-row" style="margin-top:16px">
+      <button class="btn-primary" id="calcular">Calcular</button>
+    </div>
+
+    <div id="resultado" style="margin-top:20px;color:var(--accent-2);font-weight:600"></div>
+  </div>
+</section>
+
+
+<div style="margin-top:16px">
+  <button class="btn-ghost" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+    Recibir asesoría personalizada
+  </button>
+</div>
 
 
       <section id="contacto">

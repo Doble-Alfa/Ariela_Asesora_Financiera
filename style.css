@@ -486,3 +486,16 @@ footer {
   color: var(--muted);
   line-height: 1.5;
 }
+
+.sim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width:500px) {
+  .sim-grid {
+    grid-template-columns: 1fr;
+  }
+}

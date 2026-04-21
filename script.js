@@ -98,7 +98,8 @@ function dibujarGrafica(dataTotal, dataInvertido) {
 
   // 🧠 Configurar texto (más grande para móvil)
   ctx.fillStyle = "#2b3a39";
-  ctx.font = "13px Inter";
+  const isMobile = window.innerWidth < 500;
+ctx.font = isMobile ? "14px Inter" : "12px Inter";
 
   // 📍 Eje Y (dinero)
   const divisionesY = 4;
